@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(222, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+.container {
+    width: 24vw;
+    height: 69vh;
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color: gray;
+}
+
+.display input {
+    height: 20vh;
+    width: 95%;
+    border: 1px solid black;
+    margin: 10px auto;
+    border-radius: 24px;
+    background-color: rgb(34, 24, 24);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    padding: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    outline: none;
+    text-align: right;
+    /* pointer-events: none; */
+}
+
+.btn-container {
+    width: 95%;
+    height: 45vh;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 7px;
+    justify-items: stretch;
+    align-content: stretch;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 24px;
+}
+
+.btn {
+    border: none;
+    display: grid;
+    place-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 24px;
+    background-color: rgb(228, 210, 210);
+    color: black;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.del {
+    font-size: 1.7rem;
+}
+
+.zz {
+    font-size: 2rem;
+}
+
+.num {
+    background-color: rgba(0, 0, 255, 0.555);
+}
+
+.orange {
+    background: rgba(255, 166, 0, 0.717);
+}
+
+.equal {
+    background-color: darkgreen;
+}
+
+.c {
+    background-color: rgba(255, 0, 0, 0.788);
+}
+
+.par {
+    background-color: rgba(238, 130, 139, 0.644);
+}
+
+.par:active {
+    background-color: rgb(238, 130, 139);
+}
+
+.del {
+    background-color: violet;
+}
+
+.num:active {
+    background-color: blue;
+}
+
+.btn:active {
+    transition: all 0.1s ease;
+    scale: 1.1;
+}
+
+.orange:active {
+    background: orange;
+}
+
+.equal:active {
+    background-color: rgba(0, 128, 0, 0.53);
+}
+
+.c:active {
+    background-color: darkred;
+}
